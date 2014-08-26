@@ -1,0 +1,38 @@
+#
+# system.prop for stuttgart
+#
+#
+ro.productdef.simmode=onesim
+ro.sf.lcd_density=320
+ro.lcd_min_brightness=20
+ro.ss.enable=true
+audio.smartlevoice.enable=false
+ril.smartvoice.enable=true
+ro.telephony.default_network=0
+dalvik.vm.heapstartsize=16m
+dalvik.vm.heapgrowthlimit=64m
+dalvik.vm.heapsize=256m
+persist.sys.ui.hw=true
+# 
+# add by linkscue, begin, for rild
+rild.libpath=/system/lib/libreference-ril.so
+rild.libargs=-d /dev/ttyS0
+# add by linkscue, end.
+#
+# add by linkscue, begin, for dex local
+dalvik.vm.dexopt-data-only=1
+# add by linkscue, end.
+#
+# add by linkscue, begin, for media
+ro.config.ringtone=Salt_water.ogg
+ro.config.notification_sound=Heaven_nearby.ogg
+ro.config.alarm_alert=Dreamland.ogg
+# add by linkscue, end.
+#
+# add by linkscue, begin, for remove red border
+persist.sys.strictmode.disable=1
+# add by linkscue, end
+#
+# for increase vold copy speed, start
+ro.vold.umsdirtyratio=20
+# end, thanks 秋叶随风ivan: http://weibo.com/hqiwu
