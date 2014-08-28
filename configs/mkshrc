@@ -46,4 +46,10 @@ if [[ "$(which bash)" != "" ]];then
     bash
 fi
 
+# add by zhufeng
+set -o vi 
+export PATH=/system/xbin:$PATH
+alias ls='busybox ls --color=auto'
+alias ll='ls -la'
+
 : place customisations above this line
