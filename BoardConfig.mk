@@ -55,10 +55,10 @@ BOARD_KERNEL_CMDLINE :=
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_CUSTOM_BOOTIMG_MK := device/lenovo/stuttgart/shbootimg.mk
-BOARD_KERNEL_IMAGE_NAME := device/lenovo/stuttgart/kernel
-TARGET_PREBUILT_KERNEL := device/lenovo/stuttgart/kernel
-#TARGET_KERNEL_SOURCE        := kernel/lenovo/stuttgart
-#TARGET_KERNEL_CONFIG	    := stuttgart_android_defconfig
+# BOARD_KERNEL_IMAGE_NAME := device/lenovo/stuttgart/kernel
+# TARGET_PREBUILT_KERNEL := device/lenovo/stuttgart/kernel
+TARGET_KERNEL_SOURCE        := kernel/lenovo/stuttgart
+TARGET_KERNEL_CONFIG	    := stuttgart_android_defconfig
 
 # head file
 TARGET_SPECIFIC_HEADER_PATH := device/lenovo/stuttgart/overlay/include
